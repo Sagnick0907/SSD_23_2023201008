@@ -1,0 +1,83 @@
+/* Home Styles */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to ensure the container covers the entire viewport */
+    background-color: #f4f4f4; /* Background color */
+    padding: 20px; /* Add padding to create space around the login box */
+    box-sizing: border-box; /* Include padding in the container's dimensions */
+}
+
+.login-box {
+    background-color: #817f7f; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid #007bff;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width:380px;
+    padding-right: 20px; /* Add right padding to separate from the login box */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="Username"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fff; /* White background color for input fields */
+    font-family: "Times New Roman", Times, serif; /* Change the font-family */
+}
+
+.login-btn {
+    background-color: #00aaff; /* Neon color for button */
+    color: #fff;
+    width:min-content;
+    border: none;
+    padding: 10px 100px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Add margin to separate button from input fields */
+}
+
+.login-btn:hover {
+    background-color: #1fcb83; /* Neon color on hover */
+}
+
+.create-account-link {
+    margin-top: 20px;
+}
+
+.create-account-link a {
+    text-decoration: none;
+    color: #60a1e6; /* Link color */
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif; /* Change the font-family */
+}
+
+.create-account-link a:hover {
+    text-decoration: underline;
+}
