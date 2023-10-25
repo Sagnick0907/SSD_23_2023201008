@@ -1,0 +1,173 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body,
+div,
+form,
+input,
+select,
+p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+h1 {
+    margin: 0;
+    align-self: center;
+    font-weight: 400;
+}
+
+h3 {
+    margin: 12px 0;
+    color: #8ebf42;
+}
+
+.main-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid #8ebf42;
+}
+
+.account-details,
+.personal-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-details>div,
+.personal-details>div>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.account-details>div,
+.personal-details>div,
+input,
+label {
+    align-self: center;
+    width: 100%;
+}
+
+label {
+    padding: 0 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background: #8ebf42;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+button:hover {
+    background: #82b534;
+}
+
+@media (min-width: 568px) {
+
+    .account-details>div,
+    .personal-details>div {
+        width: 50%;
+    }
+
+    label {
+        width: 40%;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    select,
+    .children,
+    .gender,
+    .bdate-block {
+        width: calc(60% + 16px);
+    }
+}
+
+#divinp {
+    align-self: center;
+    border: 2px solid green;
+    margin-left: 2%;
+    width: 100%;
+    min-height: 200px;
+    height: 50%;
+    /* float:right; */
+}
+
+.picktarget {
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid rgb(19, 78, 173);
+    margin: 5%;
+}
+
+.droptarget {
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid rgb(19, 78, 173);
+    margin: 5%;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Add additional styles for dark mode as needed */
+
+/* Toggle button styles */
+#toggleButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}

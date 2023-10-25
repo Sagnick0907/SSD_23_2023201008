@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Account registration form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="scripts.js"></script>
+</head>
+
+<body class="light-mode">
+    <div class="main-block">
+        <form action="/" onsubmit="handleSubmit(event)">
+            <h1>Gali Cricket Tournament Team Registration</h1>
+            <fieldset>
+                <legend>
+                    <h3>Team Details</h3>
+                </legend>
+                <div class="account-details">
+
+                    <div><label>Team Name*</label>
+                        <input type="text" id="teamname" name="teamname" required oninput="validName()">
+                        <div class="error" style="display: none;">Invalid Name</div>
+                    </div>
+
+                    <div><label>Team Coach Name*</label>
+                        <input type="text" name="coachname" required>
+                    </div>
+                    <div><label>Team Email ID*</label>
+                        <input type="email" name="name" required>
+                    </div>
+                    <div class="password-field">
+                        <label>Password*</label>
+                        <input type="password" value="FakePSW" id="passwd" required>
+                        <span id="password-toggle" class="password-toggle" onclick="validatePassword()">Show Password</span>
+                    </div>
+                
+                    <div>
+                        <label>Confirm Password*</label>
+                        <input type="password" name="passwd2" required onblur="validatePassword()">
+                        <div class="error" style="display: none;">Passwords do not match</div>
+                    </div>
+                    <div>
+                        <label for="teamCaptain">Team Captain*</label>
+                        <select id="teamCaptain" name="teamCaptain" required>
+                            <option value="">Select Team Captain: </option>
+                            <option value="captain1">Rohit Sharma</option>
+                            <option value="captain2">MS Dhnoi</option>
+                            <option value="captain3">Lionel Messi</option>
+                            <option value="captain3">Bruce Lee</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Team Member Details</h3>
+                </legend>
+
+                <div id="divinp" style="display: flex; margin:3%">
+                    <div class="droptarget" id="picktarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p id="player1" draggable="true" ondragstart="drag(event)" ondrag="dragging(event)"
+                            id="dragtarget">Rohit Sharma</p>
+                        <p id="player2" draggable="true" ondragstart="drag(event)" ondrag="dragging(event)"
+                            id="dragtarget">Virat Kohli</p>
+                        <p id="player3" draggable="true" ondragstart="drag(event)" ondrag="dragging(event)"
+                            id="dragtarget">MS Dhoni</p>
+                        <p id="player4" draggable="true" ondragstart="drag(event)" ondrag="dragging(event)"
+                            id="dragtarget">Lionel Messi</p>
+                        <p id="player5" draggable="true" ondragstart="drag(event)" ondrag="dragging(event)"
+                            id="dragtarget">Harry Kane</p>
+                        <p id="player6" draggable="true" ondragstart="drag(event)" ondrag="dragging(event)"
+                            id="dragtarget">Bruce Lee</p>
+                    </div>
+
+                    <p id="demo"></p>
+
+                    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+
+        <div id="toggleButton" onclick="toggleMode()"></div>
+</body>
+
+</html>
