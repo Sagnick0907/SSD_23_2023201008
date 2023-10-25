@@ -1,0 +1,67 @@
+/* Register Styles */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to ensure the container covers the entire viewport */
+    background-color: #f4f4f4; /* Background color */
+    padding: 20px; /* Add padding to create space around the register box */
+    box-sizing: border-box; /* Include padding in the container's dimensions */
+}
+
+.register-box {
+    background-color: #f9f9f9; /* Light gray background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    padding-right: 10px; /* Add right padding to separate from the register box */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff; /* White background color for input fields */
+    font-family: "Times New Roman", Times, serif; /* Change the font-family */
+}
+
+.register-btn {
+    background-color: #00aaff; /* Neon color for button */
+    color: #fff;
+    border: none;
+    padding: 10px 30px; /* Increase the width by adjusting padding */
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Add margin to separate button from input fields */
+    font-family: "Times New Roman", Times, serif; /* Change the font-family */
+}
+
+.register-btn:hover {
+    background-color: #1fcb83; /* Neon color on hover */
+}
