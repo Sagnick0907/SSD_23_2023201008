@@ -1,0 +1,28 @@
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #000000;
+}
+/* PendingToDoPage styles */
+.questions-container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.question-box {
+    background-color: #ccc;
+    border: 1px solid #000000;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #000000;
+}
